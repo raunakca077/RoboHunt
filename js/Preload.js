@@ -25,7 +25,7 @@ window.onload = function () {
 
     const endPreload = setInterval(function () {
         clearInterval(endPreload);
-        new Game(canvas);  //,resources
+        new Game(canvas,resources);  //,resources
     
 }, 5000);
 

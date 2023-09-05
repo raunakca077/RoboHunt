@@ -35,8 +35,9 @@ function Arena(ctx) {
         this._createMapPart([16, 17, 18, 19], this.totalNoOfTiles, 2, [1, 2], 0);
 
         
-        this._createObstacle({x: 600, y: 435}, 205, 125);
-        this._createObstacle({x: 2600, y: 435}, 205, 125);
+     this._createObstacle({x:250, y:280}, 180, 160);
+     this._createObstacle({x: 2600, y: 435}, 205, 125);
+     this._createObstacle({x: 600, y: 435}, 170, 163);
 
         this.grass = new Image();
         this.sand = new Image();
@@ -99,7 +100,7 @@ function Arena(ctx) {
 
         this.ctx.drawImage(this.background, 0, 0, 280, 220, 200, 230, 280, 260);
         this.ctx.drawImage(this.tree, 0, 0, 550, 625, 2300, 100, 350, 398);
-        this.ctx.drawImage(this.bigStone, 0, 0, 205, 125, 600, 400, 205, 125); 
+        this.ctx.drawImage(this.bigStone, 0, 0, 215, 125, 600, 400, 215, 130); 
         this.ctx.drawImage(this.bigStone, 0, 0, 205, 125, 2600, 400, 205, 125);  
         for (var i = 0; i < _this.mapArray.length; i++) {
 
